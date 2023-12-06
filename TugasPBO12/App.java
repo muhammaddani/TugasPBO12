@@ -8,12 +8,12 @@ public class App {
         String namaKasir = " Dani ";
 
         Scanner scanner = new Scanner(System.in);
-        Date tanggal = new Date();
+        Date tanggal = new Date(); //pembuatan objek dari class date
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, dd/MM/yyyy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, dd/MM/yyyy"); //implementasi class date
         String tanggalTransaksi = dateFormat.format(tanggal);
 
-        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss z");
+        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss z"); //implementasi class date
         String waktuTransaksi = timeFormat.format(tanggal);
         
 
@@ -62,7 +62,7 @@ public class App {
             System.out.println("Jumlah Beli\t: " + tes1.jumlahBeli);
             System.out.println("TOTAL BAYAR\t: " + tes1.totalBayar);
             System.out.println("++++++++++++++++++++++++");
-            System.out.println("Kasir\t\t: " + namaKasir.trim());
+            System.out.println("Kasir\t\t: " + namaKasir.trim()); //method string
             System.out.println("");
 
 
@@ -72,4 +72,6 @@ public class App {
             scanner.close();
         }
     }
+
+    
 }
